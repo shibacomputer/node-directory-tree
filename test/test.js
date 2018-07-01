@@ -25,7 +25,7 @@ describe('directoryTree', () => {
 		let number_of_files =  7;
 		let callback_executed_times = 0;
 
-		const tree = dirtree('./test/test_data', null, function(item, PATH) {
+		const tree = dirtree('./test/test_data', null, function(item, uri) {
 			callback_executed_times++;
 		});
 
@@ -36,7 +36,7 @@ describe('directoryTree', () => {
 		let number_of_files =  6;
 		let callback_executed_times = 0;
 
-		const tree = dirtree('./test/test_data', {extensions:/\.txt$/}, function(item, PATH) {
+		const tree = dirtree('./test/test_data', {extensions:/\.txt$/}, function(item, uri) {
 			callback_executed_times++;
 		});
 		expect(callback_executed_times).to.equal(number_of_files);
@@ -53,7 +53,7 @@ describe('directoryTree', () => {
 	});
 
 	it('should return the correct exact result', () => {
-		const tree = dirtree('./test/test_data', {normalizePath: true});
+		const tree = dirtree('./test/test_data', {normalizeuri: true});
 		expect(tree).to.deep.equal(testTree);
 	});
 
@@ -68,12 +68,12 @@ describe('directoryTree', () => {
 	})
 
 	it('should exclude the correct folders', () => {
-		const tree = dirtree('./test/test_data',{exclude: /another_dir/, normalizePath: true});
+		const tree = dirtree('./test/test_data',{exclude: /another_dir/, normalizeuri: true});
 		expect(tree).to.deep.equal(excludeTree);
 	});
 
 	it('should exclude multiple folders', () => {
-		const tree = dirtree('./test/test_data', {exclude: [/another_dir/, /some_dir_2/], normalizePath: true});
+		const tree = dirtree('./test/test_data', {exclude: [/another_dir/, /some_dir_2/], normalizeuri: true});
 		expect(tree).to.deep.equal(excludeTree2);
 	});
 });

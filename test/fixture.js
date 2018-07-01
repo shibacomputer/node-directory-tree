@@ -1,11 +1,11 @@
 tree = {
-  "path": "./test/test_data",
+  "uri": "./test/test_data",
   "name": "test_data",
   "id": 4262755940,
   "type": "directory",
   "children": [
     {
-      "path": "test/test_data/file_a.txt",
+      "uri": "test/test_data/file_a.txt",
       "name": "file_a.txt",
       "size": 12,
       "type": "file",
@@ -13,7 +13,7 @@ tree = {
       "id": 2225799044
     },
     {
-      "path": "test/test_data/file_b.txt",
+      "uri": "test/test_data/file_b.txt",
       "name": "file_b.txt",
       "size": 3756,
       "type": "file",
@@ -21,19 +21,19 @@ tree = {
       "id": 3795045511
     },
     {
-      "path": "test/test_data/some_dir",
+      "uri": "test/test_data/some_dir",
       "name": "some_dir",
       "id": 961038334,
       "type": "directory",
       "children": [
         {
-          "path": "test/test_data/some_dir/another_dir",
+          "uri": "test/test_data/some_dir/another_dir",
           "name": "another_dir",
           "type": "directory",
           "id": 2996937562,
           "children": [
             {
-              "path": "test/test_data/some_dir/another_dir/file_a.txt",
+              "uri": "test/test_data/some_dir/another_dir/file_a.txt",
               "name": "file_a.txt",
               "size": 12,
               "type": "file",
@@ -41,7 +41,7 @@ tree = {
               "id": 3227040315
             },
             {
-              "path": "test/test_data/some_dir/another_dir/file_b.txt",
+              "uri": "test/test_data/some_dir/another_dir/file_b.txt",
               "name": "file_b.txt",
               "size": 3756,
               "type": "file",
@@ -52,7 +52,7 @@ tree = {
           "size": 3768
         },
         {
-          "path": "test/test_data/some_dir/file_a.txt",
+          "uri": "test/test_data/some_dir/file_a.txt",
           "name": "file_a.txt",
           "size": 12,
           "type": "file",
@@ -60,7 +60,7 @@ tree = {
           "id": 3469763807
         },
         {
-          "path": "test/test_data/some_dir/file_b.txt",
+          "uri": "test/test_data/some_dir/file_b.txt",
           "name": "file_b.txt",
           "size": 3756,
           "type": "file",
@@ -71,13 +71,13 @@ tree = {
       "size": 7536
     },
     {
-      "path": "test/test_data/some_dir_2",
+      "uri": "test/test_data/some_dir_2",
       "name": "some_dir_2",
       "id": 1246419123,
       "type": "directory",
       "children": [
         {
-          "path": "test/test_data/some_dir_2/.gitkeep",
+          "uri": "test/test_data/some_dir_2/.gitkeep",
           "name": ".gitkeep",
           "size": 0,
           "type": "file",
